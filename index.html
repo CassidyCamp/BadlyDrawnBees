@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BadlyDrawnBees</title>
+    <link rel="icon" type="image/x-icon" href="./img/rose.png">
+
+    <!--css links-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/contact-form.css">
+    
+    <!--fonts and icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/08849772f7.js" crossorigin="anonymous"></script>
+
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="logo" >
+                    <a href="#home" class="nav-link" id="link-rose" >
+                        <span id="rose"> <img src="./img/rose.png " id="logo" alt="AD"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                   <a href="#home" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-text">Home</span>
+                   </a> 
+                </li>
+        
+                 <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="link-text">About Me</span>
+                    </a> 
+                 </li>
+                 <li class="nav-item">
+                    <a href="#work" class="nav-link">
+                    <i class="fa-solid fa-palette"></i>
+                    <span class="link-text">
+                        Drawings</span>
+                    </a> 
+                 </li>
+                 <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="link-text">Contact</span>
+                    </a> 
+                 </li>
+            </ul>    
+            </nav>
+
+        <section id="home">
+            
+                <div class="warp">
+                        <div class="homepage-txt">
+                            <h1>BadlyDrawnBees</h1>
+                            <p>Welcome to my world...</p>
+                        </div>
+                        <img src="./img/red_nailpolish.png" alt="">
+                </div>
+            
+        </section>
+        <section id="about">
+            <div class="warp">
+                <h2>About me</h2>
+                <p>Hi, I'm BadlyDrawnBees!</p>
+                <p>In my free time, I draw little things that catch my eye.</p>
+                <blockquote>
+                    <p>Drawing is the root of everything.</p>
+                    <cite> - Vincent van Gogh</cite>
+                  </blockquote>
+            </div>
+                <img src="https://i.imgur.com/Y10uIeD.jpg" alt="">
+        </section>
+        <section id="work"> 
+                     <!--cards-->
+            <div class="work">
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/1155765401477726258/1176635080228208860/IMG_20230904_173808.jpg?ex=656f95cf&is=655d20cf&hm=59bab4c48ae66d0055fe67a72680e9fd06ce23cc886c3485e1f836fe4b33a4b5&=&width=481&height=642" id="drawing3" alt="bad portrait of Ariana Grande">
+                    <div class="intro">
+                        <h3>AG</h3>
+                            <a href="./html/imageZoom1.html">
+                                <button>
+                                    More</button>
+                            </a>    
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/1155765401477726258/1176783877382090762/Falin_Ref_Sheet.jpg?ex=65702063&is=655dab63&hm=19a686055525db46793d488a5e00ef3ec8686046a77a3f1c2b563b1251a86140&=&width=855&height=642" id="drawing4" alt="Falin">
+                    <div class="intro">
+                        <h3>Falin</h3>
+                        <a href="./html/imageZoomFalin.html">
+                            <button>
+                                More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.discordapp.net/attachments/1155765401477726258/1176783878833328138/Kalikin_Ref_Sheet.jpg?ex=65702064&is=655dab64&hm=5a7a14a898c304001eaa5ae983d964909ba849f53bf148db5be2d271e8c75ac8&=&width=855&height=642" id="drawing5" alt="Freedie Mercury">
+                    <div class="intro">
+                        <h3>Kalikin</h3>
+                        <a href="./html/imageZoomKalikin.html">
+                            <button>
+                                More</button>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        
+        <section id="contact">
+          <!--  <div class="warp"> -->
+                
+                
+                <form class="warp" action="https://formspree.io/f/xnqkyyka" onsubmit="this.submit(); this.reset(); return false;" method="POST">
+                    <h2>Contact</h2>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="20" rows="10" name="message" required></textarea>
+    
+                    <button type="submit">submit</button>
+                </form>
+               <img src="./img/drawings/handshake.jpg" alt=""> 
+         <!--   </div> -->
+        </section>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/imageZoom.js"></script>
+    <script src="./js/kontakt.js"></script>
+</body>
+
+</html>
